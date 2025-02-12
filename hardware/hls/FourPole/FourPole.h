@@ -9,5 +9,4 @@
 #define piosr PI / SR
 typedef ap_axis<32, 2, 4, 1> stream;
 
-void fourpole(hls::stream<stream> &in, hls::stream<stream> &out, volatile double &g0, volatile double &g1,
-			  volatile double &g2, volatile double &g3, volatile double &a, volatile float &k);
+void fourpole(hls::stream<stream> &in, hls::stream<stream> &out, float coeffs[6]);
